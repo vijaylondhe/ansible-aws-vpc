@@ -21,4 +21,9 @@ zone3: us-east-1c
 
 state: present
 
+#Bastion vars
 
+bastion_ami: ami-006dcf34c09e50022
+MYIP: 0.0.0.0/32
+keyName: vprofile-key
+instanceType: t2.micro
