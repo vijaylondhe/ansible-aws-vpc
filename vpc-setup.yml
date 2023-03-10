@@ -49,7 +49,7 @@
         region: "{{ region }}"
         az: "{{ zone3 }}"
         state: "{{ state }}"
-        cidr: "{{ PubSub2Cidr }}"
+        cidr: "{{ PubSub3Cidr }}"
         map_public: yes
         resource_tags:
           Name: vprofile-pubsub3
