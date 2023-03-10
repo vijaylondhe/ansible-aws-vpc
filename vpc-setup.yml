@@ -98,7 +98,6 @@
           Name: vprofile_IGW
       register: igw_out
 
-
     - name: Setup Public subnet Route Table
       ec2_vpc_route_table:
         vpc_id: "{{ vpcout.vpc.id }}"
@@ -114,7 +113,6 @@
             gateway_id: "{{igw_out.gateway_id}}"
       register: pubRT_out
 
-
     - name: Create new NAT Gateway1 and allocate new EIP if NATGW does not exist yet in the subnet
       ec2_vpc_nat_gateway:
         state: "{{ state }}"
@@ -123,7 +121,6 @@
         region: "{{ region }}"
         if_exist_do_not_create: true
       register: NATGW_out
-
 
     - name: Setup Private subnet route table
       ec2_vpc_route_table:
@@ -139,7 +136,6 @@
           - dest: 0.0.0.0/0
             gateway_id: "{{NATGW_out.nat_gateway_id}}"
       register: privRT_out
-
 
     - debug:
         var: "{{item}}"
