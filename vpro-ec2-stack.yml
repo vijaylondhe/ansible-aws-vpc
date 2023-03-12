@@ -59,7 +59,7 @@
       register: vproStackSG_out
 
     - name: Update Security Group with its own sg id
-      ec_group:
+      ec2_group:
         name: vproStack-sg
         description: allow all ports within the sg
         region: "{{region}}"
