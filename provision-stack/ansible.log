@@ -1,0 +1,29 @@
+2023-03-13 08:39:32,100 p=6945 u=root n=ansible | PLAY [Set host to ip mapping in /etc/hosts file of all the instances in the stack] ************
+2023-03-13 08:39:32,109 p=6945 u=root n=ansible | TASK [Gathering Facts] ************************************************************************
+2023-03-13 08:39:33,370 p=6945 u=root n=ansible | ok: [cntl]
+2023-03-13 08:39:34,876 p=6945 u=root n=ansible | ok: [app01]
+2023-03-13 08:39:35,007 p=6945 u=root n=ansible | ok: [mc01]
+2023-03-13 08:39:35,136 p=6945 u=root n=ansible | ok: [rmq01]
+2023-03-13 08:39:35,474 p=6945 u=root n=ansible | ok: [web01]
+2023-03-13 08:39:36,172 p=6945 u=root n=ansible | ok: [db01]
+2023-03-13 08:39:36,186 p=6945 u=root n=ansible | TASK [Import VPC setup Variable] **************************************************************
+2023-03-13 08:39:36,201 p=6945 u=root n=ansible | ok: [cntl]
+2023-03-13 08:39:36,212 p=6945 u=root n=ansible | ok: [web01]
+2023-03-13 08:39:36,223 p=6945 u=root n=ansible | ok: [app01]
+2023-03-13 08:39:36,235 p=6945 u=root n=ansible | ok: [rmq01]
+2023-03-13 08:39:36,246 p=6945 u=root n=ansible | ok: [mc01]
+2023-03-13 08:39:36,254 p=6945 u=root n=ansible | ok: [db01]
+2023-03-13 08:39:36,262 p=6945 u=root n=ansible | TASK [Update hosts file for all the hosts] ****************************************************
+2023-03-13 08:39:36,743 p=6945 u=root n=ansible | changed: [cntl]
+2023-03-13 08:39:36,801 p=6945 u=root n=ansible | changed: [app01]
+2023-03-13 08:39:36,817 p=6945 u=root n=ansible | changed: [mc01]
+2023-03-13 08:39:36,818 p=6945 u=root n=ansible | changed: [web01]
+2023-03-13 08:39:36,821 p=6945 u=root n=ansible | changed: [rmq01]
+2023-03-13 08:39:37,033 p=6945 u=root n=ansible | changed: [db01]
+2023-03-13 08:39:37,047 p=6945 u=root n=ansible | PLAY RECAP ************************************************************************************
+2023-03-13 08:39:37,048 p=6945 u=root n=ansible | app01                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-13 08:39:37,048 p=6945 u=root n=ansible | cntl                       : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-13 08:39:37,048 p=6945 u=root n=ansible | db01                       : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-13 08:39:37,048 p=6945 u=root n=ansible | mc01                       : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-13 08:39:37,048 p=6945 u=root n=ansible | rmq01                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-13 08:39:37,048 p=6945 u=root n=ansible | web01                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
