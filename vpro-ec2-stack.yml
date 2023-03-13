@@ -13,7 +13,7 @@
       include_vars: vars/vprostacksetup
 
     - name: Create Key pair
-      ec2_key:
+      amazon.aws.ec2_key:
         name: vprokey
         region: "{{region}}"
       register: vprokey_out
